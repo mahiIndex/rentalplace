@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RentalPlace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+<!-- header section  -->
+    <header>
+    <div class="site-header">
+        <div class="container">
+                    <div class="logo-container">
+                        <a href="index.html"><img src="images/Logo.png"></a>
+                    </div>
+                
+   
+ <nav class="navbar main-nav">
+    <ul class="navbar-nav">                                    
+    <li class="nav-item active"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Discover</a></li>
+    <li  class="nav-item"><a href="#">Services</a></li>
+    <li class="nav-item"><a href="#">Blogs</a></li>
+    <li class="nav-item"><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="head-btn">
+            <a href="#" class="btn"> <i class="fa fa-user" aria-hidden="true"></i>
+                <span> Login/Signup</span></a>
+    </div>
+                             <!-- Toggler/collapsibe Button -->
+                             <button class="navbar-toggler nav-close">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    </button>
+                              <!-- Toggler/collapsibe Button -->
+                              <button class="navbar-toggler nav-open">
+                                    <i class="fa fa-bars"></i>
+                                    </button>
+                    </nav>
+                </div>
+            </div>
+</header>
+
+<!-- site main content start -->
+<main class="main-content">
+
+<div class="collection_form">
+<div class="container">
+    <form action="#">
+                <ul class="text_block">
+                    <li class="input_group">
+                  <label>Location</label>
+                  <input type="text" class="form-control" placeholder="City you need a car?"> 
+                        </li>
+
+                    <li class="input_group">
+                            <label>Pickup Date</label>
+                            <input type="text" class="form-control" placeholder="Add dates"> 
+                        </li>
+                          <li class="input_group">
+                                <label>End Date</label>
+                                <input type="text" class="form-control" placeholder="Add dates"> 
+                          </li>
+                          <li class="input_group search_btn">
+                                <button class="btn"><i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                          </li>
+                          </ul>
+        </form>           
+</div>
+</div>
+
+<div class="main-collection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-3">
+                <div class="side-filters">
+                        <h2 id="filterToggler"><i class="fa fa-filter" aria-hidden="true"></i>  Filter By</h2>
+                    <!-- filter location -->
+                    <div class="filter_sideNav">
+                        <span id="closeFilter"><i class="fa fa-times" aria-hidden="true"></i> </span>
+                    <div class="filter-block">
+                    <h4>Location</h4>
+                    <div class="filter-group">
+                            <input type="radio" id="secunderabad" name="Location" value="secunderabad">
+                            <label for="secunderabad">Secunderabad</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="kukatpally" name="Location" value="kukatpally">
+                            <label for="kukatpally">Kukatpally</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Banjara" name="Location" value="Banjara">
+                            <label for="Banjara">Banjara Hills</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <h4>Price</h4>
+                            <div class="wrapper">
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                                <div class="extra-controls form-inline">
+                                  <div class="result_div">
+                                    <input type="text" class="js-input-from form-control" value="0" />
+                                    <label for="">K</label>
+                                    </div>
+                                    <div class="result_div">
+                                    <input type="text" class="js-input-to form-control" value="0" />
+                                    <label for="">K</label>
+                                    </div>
+                                </div>
+                                  </div>
+                                </div>
+                 
+                        <!-- filter price -->
+                        <div class="filter-block">
+                                <h4>Capacity</h4>
+                                <div class="filter-group">
+                                        <input type="radio" id="Capacity01" name="Capacity" value="Capacity01">
+                                        <label for="Capacity01">2 - 5 Members</label>
+                                        </div>
+                                        <div class="filter-group">
+                                        <input type="radio" id="Capacity02" name="Capacity" value="Capacity02">
+                                        <label for="Capacity02">5 to 8 Members</label>
+                                        </div>
+                                    </div>
+
+                                   <!-- filter Category -->
+                                   <div class="filter-block">
+                                        <h4>Category</h4>
+                                        <div class="filter-group">
+                                                <input type="radio" id="Hatchback" name="Category" value="Hatchback">
+                                                <label for="Hatchback">Hatchback</label>
+                                                </div>
+                                                <div class="filter-group">
+                                                <input type="radio" id="Sedan" name="Category" value="Sedan">
+                                                <label for="Sedan">Sedan</label>
+                                                </div>
+                                                <div class="filter-group">
+                                                <input type="radio" id="SUV" name="Category" value="SUV">
+                                                <label for="SUV">SUV</label>
+                                                </div>
+                                            </div>
+
+                   <!-- filter fuel type -->
+                                   <div class="filter-block">
+                                        <h4>Fuel Type</h4>
+                                        <div class="filter-group">
+                                                <input type="radio" id="Petrol" name="Fuel_type" value="Petrol">
+                                                <label for="Petrol">Petrol</label>
+                                                </div>
+                                                <div class="filter-group">
+                                                <input type="radio" id="Diesel" name="Fuel_type" value="Diesel">
+                                                <label for="Diesel">Diesel</label>
+                                                </div>
+                                            </div>
+
+                   <!-- filter Transmission Type -->
+                   <div class="filter-block">
+                        <h4>Transmission Type</h4>
+
+                                <div class="filter-group">
+                                <input type="radio" id="Automatic" name="transmission_type" value="Automatic">
+                                <label for="Automatic">Automatic</label>
+                                </div>
+                                <div class="filter-group">
+                                        <input type="radio" id="Manual" name="transmission_type" value="Manual">
+                                        <label for="Manual">Manual</label>
+                                        </div>
+                            </div>
+                            
+                            <!-- filter Car Brand -->
+                            <div class="filter-block">
+                            <h4>Car Brand</h4>
+
+                            <div class="filter-group">
+                            <input type="radio" id="Toyota" name="Car_brand" value="Toyota">
+                            <label for="Toyota">Toyota</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Honda" name="Car_brand" value="Honda">
+                            <label for="Honda">Manual</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Suzuki" name="Car_brand" value="Suzuki">
+                            <label for="Suzuki">Suzuki</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Nissan" name="Car_brand" value="Nissan">
+                            <label for="Nissan">Nissan</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Audi" name="Car_brand" value="Audi">
+                            <label for="Audi">Audi</label>
+                            </div>
+                            <div class="filter-group">
+                            <input type="radio" id="Cheverolet" name="Car_brand" value="Cheverolet">
+                            <label for="Cheverolet">Cheverolet</label>
+                            </div>
+                            </div>
+                            <!-- filter Car Brand -->
+                            <div class="filter-block">
+                                    <h4>Special features </h4>
+        
+                                    <div class="filter-group">
+                                    <input type="radio" id="Convertible" name="Special_features " value="Convertible">
+                                    <label for="Convertible">Convertible Top</label>
+                                    </div>
+                                    <div class="filter-group">
+                                    <input type="radio" id="Sunroof" name="Special_features" value="Sunroof">
+                                    <label for="Sunroof">Sunroof</label>
+                                    </div>
+                                    <div class="filter-group">
+                                    <input type="radio" id="Brand_new" name="Special_features" value="Brand_new">
+                                    <label for="Brand_new">Brand New</label>
+                                    </div>
+                                    <div class="filter-group">
+                                    <input type="radio" id="Air_purifier" name="Special_features" value="Air_purifier">
+                                    <label for="Air_purifier">Air Purifier</label>
+                                    </div>
+                                    <div class="filter-group">
+                                    <input type="radio" id="Cruise_control" name="Special_features" value="Cruise_control">
+                                    <label for="Cruise_control">Cruise Control</label>
+                                    </div>
+                                    <div class="filter-group">
+                                    <input type="radio" id="AC_VentilatedSeats" name="Special_features" value="AC_VentilatedSeats">
+                                    <label for="AC_VentilatedSeats">AC Ventilated Seats</label>
+                                    </div>
+                                    </div>
+                    </div>
+                    </div>
+               </div>
+         <!-- collection products -->
+         <div class="col-md-12 col-lg-9">
+                <div class="top_header">
+                    <h4>27 Results</h4>
+                    <div class="short_by hide">
+                        <span>Sort by</span>
+                        <select name="" id="">
+                            <option value=""> High to Low</option>
+                            <option value=""> Low to High</option>
+                            <option value=""> Patrol</option>
+                            <option value=""> Diesel</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="collection_list">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                                    
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img ">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                                <div class="product-block">
+                                        <div class="product-image car_img">
+                                            <img src="images/car_image.png"/>
+                                        </div>
+                                        <div class="text-block">
+                                            <h4>Maruti Suzuki</h4>
+                                            <span class="spacial-deal">SPECIAL DEAL</span>
+                                            <span class="location">Swift 2019 Model</span>
+                                            <ul class="car_accessories">
+                                                <li> <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.6669 8.6112V18.0835C20.6669 18.3119 20.5762 18.5309 20.4147 18.6924C20.2532 18.8539 20.0341 18.9446 19.8058 18.9446C19.5774 18.9446 19.3584 18.8539 19.1969 18.6924C19.0354 18.5309 18.9446 18.3119 18.9446 18.0835V14.639C18.9446 13.9539 18.6725 13.2968 18.188 12.8123C17.7035 12.3279 17.0464 12.0557 16.3613 12.0557H13.7779V1.72224C13.7779 1.26547 13.5965 0.827415 13.2735 0.504432C12.9505 0.18145 12.5124 0 12.0557 0H1.72224C1.26547 0 0.827415 0.18145 0.504432 0.504432C0.18145 0.827415 0 1.26547 0 1.72224V20.6669C0 21.1237 0.18145 21.5617 0.504432 21.8847C0.827415 22.2077 1.26547 22.3891 1.72224 22.3891H12.0557C12.5124 22.3891 12.9505 22.2077 13.2735 21.8847C13.5965 21.5617 13.7779 21.1237 13.7779 20.6669V13.7779H16.3613C16.5897 13.7779 16.8087 13.8686 16.9702 14.0301C17.1317 14.1916 17.2224 14.4107 17.2224 14.639V18.0835C17.2224 18.7687 17.4946 19.4258 17.9791 19.9102C18.4635 20.3947 19.1206 20.6669 19.8058 20.6669C20.4909 20.6669 21.148 20.3947 21.6325 19.9102C22.1169 19.4258 22.3891 18.7687 22.3891 18.0835V6.88896C22.3891 6.4322 22.2077 5.99414 21.8847 5.67115C21.5617 5.34817 21.1236 5.16672 20.6669 5.16672V2.56614C20.6624 2.34075 20.5697 2.12612 20.4087 1.96834C20.2477 1.81055 20.0312 1.7222 19.8058 1.72224C19.6858 1.72422 19.5676 1.75074 19.4583 1.80017C19.349 1.84959 19.251 1.92088 19.1703 2.00963C19.0897 2.09837 19.028 2.20271 18.9892 2.31619C18.9504 2.42967 18.9352 2.5499 18.9446 2.66947V6.88896C18.9446 7.22959 19.0457 7.56257 19.2349 7.84579C19.4241 8.12901 19.6931 8.34975 20.0078 8.4801C20.3225 8.61046 20.6688 8.64456 21.0029 8.57811C21.337 8.51166 21.6438 8.34763 21.8847 8.10677C22.1256 7.86591 22.2896 7.55904 22.356 7.22495C22.4225 6.89087 22.3884 6.54459 22.258 6.22989C22.1277 5.91519 21.9069 5.64621 21.6237 5.45697C21.3405 5.26773 21.0075 5.16672 20.6669 5.16672V8.6112ZM12.0557 9.47232C12.0557 9.70071 11.965 9.91973 11.8035 10.0812C11.642 10.2427 11.4229 10.3334 11.1946 10.3334H2.58336C2.35498 10.3334 2.13595 10.2427 1.97446 10.0812C1.81297 9.91973 1.72224 9.70071 1.72224 9.47232V4.3056C1.72224 4.07722 1.81297 3.85819 1.97446 3.6967C2.13595 3.53521 2.35498 3.44448 2.58336 3.44448H11.1946C11.4229 3.44448 11.642 3.53521 11.8035 3.6967C11.965 3.85819 12.0557 4.07722 12.0557 4.3056V9.47232Z" fill="#FCB541"/>
+                                                    </svg>
+                                                     <span>Diesel</span></li>
+                                                <li><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.44974 18.373V22.0476H6.12435V18.373H18.373V22.0476H22.0477V14.6984H2.44974V18.373ZM20.8228 8.57409H24.4974V12.2487H20.8228V8.57409ZM0 8.57409H3.67461V12.2487H0V8.57409ZM18.373 12.2487H6.12435V2.44974C6.12435 1.10238 7.22673 0 8.57409 0H15.9233C17.2707 0 18.373 1.10238 18.373 2.44974V12.2487Z" fill="#FCB541"/>
+                                                    </svg>
+                                                    <span>5 Seats</span></li>
+                                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.329 6.10742V12.7885H3.5127" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4221 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.5127 6.10742V19.4696" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23.5569 3.88036C23.5569 4.471 23.3222 5.03746 22.9046 5.45511C22.4869 5.87276 21.9205 6.10739 21.3298 6.10739C20.7392 6.10739 20.1727 5.87276 19.7551 5.45511C19.3374 5.03746 19.1028 4.471 19.1028 3.88036C19.1028 3.28971 19.3374 2.72325 19.7551 2.3056C20.1727 1.88795 20.7392 1.65332 21.3298 1.65332C21.9205 1.65332 22.4869 1.88795 22.9046 2.3056C23.3222 2.72325 23.5569 3.28971 23.5569 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 3.88036C14.6496 4.471 14.415 5.03746 13.9973 5.45511C13.5797 5.87276 13.0132 6.10739 12.4226 6.10739C11.8319 6.10739 11.2655 5.87276 10.8478 5.45511C10.4302 5.03746 10.1956 4.471 10.1956 3.88036C10.1956 3.28971 10.4302 2.72325 10.8478 2.3056C11.2655 1.88795 11.8319 1.65332 12.4226 1.65332C13.0132 1.65332 13.5797 1.88795 13.9973 2.3056C14.415 2.72325 14.6496 3.28971 14.6496 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 3.88036C5.73923 4.471 5.5046 5.03746 5.08695 5.45511C4.6693 5.87276 4.10284 6.10739 3.51219 6.10739C2.92155 6.10739 2.35509 5.87276 1.93744 5.45511C1.51979 5.03746 1.28516 4.471 1.28516 3.88036C1.28516 3.28971 1.51979 2.72325 1.93744 2.3056C2.35509 1.88795 2.92155 1.65332 3.51219 1.65332C4.10284 1.65332 4.6693 1.88795 5.08695 2.3056C5.5046 2.72325 5.73923 3.28971 5.73923 3.88036V3.88036Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14.6496 21.6966C14.6496 22.2873 14.415 22.8537 13.9973 23.2714C13.5797 23.689 13.0132 23.9237 12.4226 23.9237C11.8319 23.9237 11.2655 23.689 10.8478 23.2714C10.4302 22.8537 10.1956 22.2873 10.1956 21.6966C10.1956 21.106 10.4302 20.5395 10.8478 20.1219C11.2655 19.7042 11.8319 19.4696 12.4226 19.4696C13.0132 19.4696 13.5797 19.7042 13.9973 20.1219C14.415 20.5395 14.6496 21.106 14.6496 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5.73923 21.6966C5.73923 22.2873 5.5046 22.8537 5.08695 23.2714C4.6693 23.689 4.10284 23.9237 3.51219 23.9237C2.92155 23.9237 2.35509 23.689 1.93744 23.2714C1.51979 22.8537 1.28516 22.2873 1.28516 21.6966C1.28516 21.106 1.51979 20.5395 1.93744 20.1219C2.35509 19.7042 2.92155 19.4696 3.51219 19.4696C4.10284 19.4696 4.6693 19.7042 5.08695 20.1219C5.5046 20.5395 5.73923 21.106 5.73923 21.6966V21.6966Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.3298 23.9237C22.5598 23.9237 23.5569 22.9266 23.5569 21.6966C23.5569 20.4667 22.5598 19.4696 21.3298 19.4696C20.0999 19.4696 19.1028 20.4667 19.1028 21.6966C19.1028 22.9266 20.0999 23.9237 21.3298 23.9237Z" stroke="#FCB541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    
+                                                    
+                                                    <span>Automatic</span></li>
+                                            </ul>
+                                            <ul class="quality_list">
+                                                    <li>Brand New</li>
+                                                </ul>
+                                            <div class="price_button">
+                                                <div class="pro_price">
+                                                        <h3>₹2,400</h3>
+                                                    <span>Onwards</span>
+                                                </div>
+                                                <button class="btn">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product_avalibity">Available from tommorow 8am</div>
+                                    </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="load_more">Load More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="stay_updated">
+    <div class="container">
+        <div class="newslatter-section">
+            <div class="text_block">
+            <h2>Stay Updated !</h2>
+            <p>Get news and updates from the world of social entrepreneuship</p>
+        </div>
+            <div class="newslatter_form">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your Email I’d">
+                <button type="submit" class="btn"> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="play_store">
+        <div class="container">
+        <h4>Download Now to Experience new way of making healthy friendships</h4>
+        <a href="#" class="g_pay"><img src="images/google_play.png"> </a>
+    </div>
+    </div>
+</div>
+
+<!-- site main content end -->
+</main>
+
+<!-- footer section  -->
+
+    
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 footer-widget01">
+            <div class="footer-block">
+              <p>We are changing the World, by changing your world.</p>
+                <ul class="footer-solcial">
+                    <span>Follow the Buzz :</span>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+          <div class="col-md-3 col-6 footer-widget02">
+            <div class="footer-block">
+              <h4>Service</h4>
+              <ul class="footer_menu">
+                <li> <a href="#">Travel Booking</a></li>
+                <li> <a href="#">Hotel Booking</a></li>
+                <li> <a href="#">Car Booking</a></li>
+                <li> <a href="#">Travelling</a></li>
+              </ul>
+            </div>
+        </div>
+          <div class="col-md-3 col-6 footer-widget03">
+            <div class="footer-block ">
+              <h4>Legal</h4>
+              <ul class="footer_menu">
+                <li> <a href="#">Terms of Use</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+              <div class="col-md-3 col-12 footer-widget04">
+            <div class="footer-block">
+              <h4>Contact</h4>
+                <ul class="contact_list">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>  040-340824524</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> hello@travelbuddy.com</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+             <div class="newslatter_block">
+                 <div class="form-group">
+                 <input type="email" class="form-control" placeholder="Your Email Address">
+                 <button type="submit" class="btn"><span>Get Updated 🎉</span></button>
+                </div>
+             </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+    <div class="container">
+        <p>© Copyright 2021 </p>
+    </div>
+     </div>
+    </footer>
+
+
+        
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/custom.js"></script>
+
+<script>
+// navbar toggler
+$(document).ready(function(){
+$(".nav-open").click(function(){
+  $("body").addClass("m__open");
+});
+$(".nav-close").click(function(){
+  $("body").removeClass("m__open");
+});
+});
+
+$(document).delegate('.site-header .dropdown-item a', 'click', function () {
+    $(this).parent().toggleClass('sub-open');
+});
+
+
+</script>
+
+
+</body>
+
+</html>
+
+
